@@ -54,13 +54,21 @@
         #wrapper{
             min-height: 100vh;
         }
+        #cont{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
     </style>
 </head>
 <body>
     <div id="wrapper">
         <?php include 'header.php' ?>
         <?php include 'navbar.php' ?>
-        <div class="container">
+        <div id="cont" class="container">
             <h2>Info</h2>
             <div class="card mb-3" style="max-width: 75vw;">
                 <div class="row g-0">
@@ -81,7 +89,6 @@
                     </div>
                 </div>
             </div>
-            <a href="index.php"><button class="btn btn-warning" type ="button">Home</button></a>
         </div>
     </div>
     <?php include 'footer.php' ?>
